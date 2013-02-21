@@ -8,9 +8,9 @@ Inspired by Vkontakte app.
 Customization
 ---------
  - Menu items color
-    + (UIColor *)itemsColor;
++ (UIColor *)itemsColor;
  - Menu item height
-    + (float)itemCellHeight;
++ (float)itemCellHeight;
  - Minimum iOS target is 5.0
 
 Example
