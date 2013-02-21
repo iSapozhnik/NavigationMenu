@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D706CD6116D3E76D005D2B53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D706CD6016D3E76D005D2B53 /* UIKit.framework */; };
+		D706CD6316D3E76D005D2B53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D706CD6216D3E76D005D2B53 /* Foundation.framework */; };
+		D706CD6516D3E76D005D2B53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D706CD6416D3E76D005D2B53 /* CoreGraphics.framework */; };
+		D706CD6B16D3E76D005D2B53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D706CD6916D3E76D005D2B53 /* InfoPlist.strings */; };
+		D706CD6D16D3E76D005D2B53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D706CD6C16D3E76D005D2B53 /* main.m */; };
+		D706CD7116D3E76D005D2B53 /* HAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D706CD7016D3E76D005D2B53 /* HAAppDelegate.m */; };
+		D706CD7316D3E76D005D2B53 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D706CD7216D3E76D005D2B53 /* Default.png */; };
+		D706CD7516D3E76D005D2B53 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D706CD7416D3E76D005D2B53 /* Default@2x.png */; };
+		D706CD7716D3E76D005D2B53 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D706CD7616D3E76D005D2B53 /* Default-568h@2x.png */; };
+		D706CD7A16D3E76D005D2B53 /* HAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D706CD7916D3E76D005D2B53 /* HAViewController.m */; };
+		D706CD7D16D3E76D005D2B53 /* HAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D706CD7B16D3E76D005D2B53 /* HAViewController.xib */; };
+		D706CD8616D3E857005D2B53 /* SINavigationMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = D706CD8516D3E857005D2B53 /* SINavigationMenuView.m */; };
+		D706CD8916D3F214005D2B53 /* SIMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D706CD8816D3F214005D2B53 /* SIMenuButton.m */; };
+		D706CD8C16D3FB0C005D2B53 /* SIMenuTable.m in Sources */ = {isa = PBXBuildFile; fileRef = D706CD8B16D3FB0C005D2B53 /* SIMenuTable.m */; };
+		D706CD8F16D40097005D2B53 /* SIMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D706CD8E16D40097005D2B53 /* SIMenuCell.m */; };
+		D721F09316D4E2D900397C1F /* arrow_down.png in Resources */ = {isa = PBXBuildFile; fileRef = D721F09116D4E2D900397C1F /* arrow_down.png */; };
+		D721F09416D4E2D900397C1F /* arrow_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D721F09216D4E2D900397C1F /* arrow_down@2x.png */; };
+		D721F09616D4E53600397C1F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D721F09516D4E53600397C1F /* QuartzCore.framework */; };
+		D721F09916D4F27B00397C1F /* SIMenuConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D721F09816D4F27B00397C1F /* SIMenuConfiguration.m */; };
+		D75952C616D5123F001B694F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D75952C516D5123F001B694F /* logo.png */; };
+		D75D641D16D62C7200B524FD /* arrow_down1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D75D641B16D62C7200B524FD /* arrow_down1@2x.png */; };
+		D75D641E16D62C7200B524FD /* arrow_down1.png in Resources */ = {isa = PBXBuildFile; fileRef = D75D641C16D62C7200B524FD /* arrow_down1.png */; };
+		D75D642016D6351200B524FD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D75D641F16D6351200B524FD /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D706CD5D16D3E76D005D2B53 /* NavigationMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D706CD6016D3E76D005D2B53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D706CD6216D3E76D005D2B53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D706CD6416D3E76D005D2B53 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D706CD6816D3E76D005D2B53 /* NavigationMenu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigationMenu-Info.plist"; sourceTree = "<group>"; };
+		D706CD6A16D3E76D005D2B53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D706CD6C16D3E76D005D2B53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D706CD6E16D3E76D005D2B53 /* NavigationMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NavigationMenu-Prefix.pch"; sourceTree = "<group>"; };
+		D706CD6F16D3E76D005D2B53 /* HAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAAppDelegate.h; sourceTree = "<group>"; };
+		D706CD7016D3E76D005D2B53 /* HAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAAppDelegate.m; sourceTree = "<group>"; };
+		D706CD7216D3E76D005D2B53 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D706CD7416D3E76D005D2B53 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D706CD7616D3E76D005D2B53 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D706CD7816D3E76D005D2B53 /* HAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAViewController.h; sourceTree = "<group>"; };
+		D706CD7916D3E76D005D2B53 /* HAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAViewController.m; sourceTree = "<group>"; };
+		D706CD7C16D3E76D005D2B53 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HAViewController.xib; sourceTree = "<group>"; };
+		D706CD8416D3E857005D2B53 /* SINavigationMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SINavigationMenuView.h; sourceTree = "<group>"; };
+		D706CD8516D3E857005D2B53 /* SINavigationMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SINavigationMenuView.m; sourceTree = "<group>"; };
+		D706CD8716D3F214005D2B53 /* SIMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMenuButton.h; sourceTree = "<group>"; };
+		D706CD8816D3F214005D2B53 /* SIMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMenuButton.m; sourceTree = "<group>"; };
+		D706CD8A16D3FB0C005D2B53 /* SIMenuTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMenuTable.h; sourceTree = "<group>"; };
+		D706CD8B16D3FB0C005D2B53 /* SIMenuTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMenuTable.m; sourceTree = "<group>"; };
+		D706CD8D16D40097005D2B53 /* SIMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMenuCell.h; sourceTree = "<group>"; };
+		D706CD8E16D40097005D2B53 /* SIMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMenuCell.m; sourceTree = "<group>"; };
+		D721F09116D4E2D900397C1F /* arrow_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_down.png; sourceTree = "<group>"; };
+		D721F09216D4E2D900397C1F /* arrow_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_down@2x.png"; sourceTree = "<group>"; };
+		D721F09516D4E53600397C1F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D721F09716D4F27B00397C1F /* SIMenuConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMenuConfiguration.h; sourceTree = "<group>"; };
+		D721F09816D4F27B00397C1F /* SIMenuConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMenuConfiguration.m; sourceTree = "<group>"; };
+		D75952C516D5123F001B694F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		D75D641B16D62C7200B524FD /* arrow_down1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_down1@2x.png"; sourceTree = "<group>"; };
+		D75D641C16D62C7200B524FD /* arrow_down1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_down1.png; sourceTree = "<group>"; };
+		D75D641F16D6351200B524FD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D706CD5A16D3E76D005D2B53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D721F09616D4E53600397C1F /* QuartzCore.framework in Frameworks */,
+				D706CD6116D3E76D005D2B53 /* UIKit.framework in Frameworks */,
+				D706CD6316D3E76D005D2B53 /* Foundation.framework in Frameworks */,
+				D706CD6516D3E76D005D2B53 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D706CD5416D3E76D005D2B53 = {
+			isa = PBXGroup;
+			children = (
+				D75D641F16D6351200B524FD /* README.md */,
+				D706CD6616D3E76D005D2B53 /* NavigationMenu */,
+				D706CD5F16D3E76D005D2B53 /* Frameworks */,
+				D706CD5E16D3E76D005D2B53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D706CD5E16D3E76D005D2B53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D706CD5D16D3E76D005D2B53 /* NavigationMenu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D706CD5F16D3E76D005D2B53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D721F09516D4E53600397C1F /* QuartzCore.framework */,
+				D706CD6016D3E76D005D2B53 /* UIKit.framework */,
+				D706CD6216D3E76D005D2B53 /* Foundation.framework */,
+				D706CD6416D3E76D005D2B53 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D706CD6616D3E76D005D2B53 /* NavigationMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D75952C516D5123F001B694F /* logo.png */,
+				D706CD8316D3E7A0005D2B53 /* NavigationMenuView */,
+				D706CD6F16D3E76D005D2B53 /* HAAppDelegate.h */,
+				D706CD7016D3E76D005D2B53 /* HAAppDelegate.m */,
+				D706CD7816D3E76D005D2B53 /* HAViewController.h */,
+				D706CD7916D3E76D005D2B53 /* HAViewController.m */,
+				D706CD7B16D3E76D005D2B53 /* HAViewController.xib */,
+				D706CD6716D3E76D005D2B53 /* Supporting Files */,
+			);
+			path = NavigationMenu;
+			sourceTree = "<group>";
+		};
+		D706CD6716D3E76D005D2B53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D706CD6816D3E76D005D2B53 /* NavigationMenu-Info.plist */,
+				D706CD6916D3E76D005D2B53 /* InfoPlist.strings */,
+				D706CD6C16D3E76D005D2B53 /* main.m */,
+				D706CD6E16D3E76D005D2B53 /* NavigationMenu-Prefix.pch */,
+				D706CD7216D3E76D005D2B53 /* Default.png */,
+				D706CD7416D3E76D005D2B53 /* Default@2x.png */,
+				D706CD7616D3E76D005D2B53 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D706CD8316D3E7A0005D2B53 /* NavigationMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				D721F09016D4E2D900397C1F /* images */,
+				D706CD8416D3E857005D2B53 /* SINavigationMenuView.h */,
+				D706CD8516D3E857005D2B53 /* SINavigationMenuView.m */,
+				D721F09716D4F27B00397C1F /* SIMenuConfiguration.h */,
+				D721F09816D4F27B00397C1F /* SIMenuConfiguration.m */,
+				D706CD8A16D3FB0C005D2B53 /* SIMenuTable.h */,
+				D706CD8B16D3FB0C005D2B53 /* SIMenuTable.m */,
+				D706CD8D16D40097005D2B53 /* SIMenuCell.h */,
+				D706CD8E16D40097005D2B53 /* SIMenuCell.m */,
+				D706CD8716D3F214005D2B53 /* SIMenuButton.h */,
+				D706CD8816D3F214005D2B53 /* SIMenuButton.m */,
+			);
+			path = NavigationMenuView;
+			sourceTree = "<group>";
+		};
+		D721F09016D4E2D900397C1F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D75D641B16D62C7200B524FD /* arrow_down1@2x.png */,
+				D75D641C16D62C7200B524FD /* arrow_down1.png */,
+				D721F09116D4E2D900397C1F /* arrow_down.png */,
+				D721F09216D4E2D900397C1F /* arrow_down@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D706CD5C16D3E76D005D2B53 /* NavigationMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D706CD8016D3E76D005D2B53 /* Build configuration list for PBXNativeTarget "NavigationMenu" */;
+			buildPhases = (
+				D706CD5916D3E76D005D2B53 /* Sources */,
+				D706CD5A16D3E76D005D2B53 /* Frameworks */,
+				D706CD5B16D3E76D005D2B53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NavigationMenu;
+			productName = NavigationMenu;
+			productReference = D706CD5D16D3E76D005D2B53 /* NavigationMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D706CD5516D3E76D005D2B53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SA;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Ivan Sapozhnik";
+			};
+			buildConfigurationList = D706CD5816D3E76D005D2B53 /* Build configuration list for PBXProject "NavigationMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D706CD5416D3E76D005D2B53;
+			productRefGroup = D706CD5E16D3E76D005D2B53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D706CD5C16D3E76D005D2B53 /* NavigationMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D706CD5B16D3E76D005D2B53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D706CD6B16D3E76D005D2B53 /* InfoPlist.strings in Resources */,
+				D706CD7316D3E76D005D2B53 /* Default.png in Resources */,
+				D706CD7516D3E76D005D2B53 /* Default@2x.png in Resources */,
+				D706CD7716D3E76D005D2B53 /* Default-568h@2x.png in Resources */,
+				D706CD7D16D3E76D005D2B53 /* HAViewController.xib in Resources */,
+				D721F09316D4E2D900397C1F /* arrow_down.png in Resources */,
+				D721F09416D4E2D900397C1F /* arrow_down@2x.png in Resources */,
+				D75952C616D5123F001B694F /* logo.png in Resources */,
+				D75D641D16D62C7200B524FD /* arrow_down1@2x.png in Resources */,
+				D75D641E16D62C7200B524FD /* arrow_down1.png in Resources */,
+				D75D642016D6351200B524FD /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D706CD5916D3E76D005D2B53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D706CD6D16D3E76D005D2B53 /* main.m in Sources */,
+				D706CD7116D3E76D005D2B53 /* HAAppDelegate.m in Sources */,
+				D706CD7A16D3E76D005D2B53 /* HAViewController.m in Sources */,
+				D706CD8616D3E857005D2B53 /* SINavigationMenuView.m in Sources */,
+				D706CD8916D3F214005D2B53 /* SIMenuButton.m in Sources */,
+				D706CD8C16D3FB0C005D2B53 /* SIMenuTable.m in Sources */,
+				D706CD8F16D40097005D2B53 /* SIMenuCell.m in Sources */,
+				D721F09916D4F27B00397C1F /* SIMenuConfiguration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D706CD6916D3E76D005D2B53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D706CD6A16D3E76D005D2B53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D706CD7B16D3E76D005D2B53 /* HAViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D706CD7C16D3E76D005D2B53 /* en */,
+			);
+			name = HAViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D706CD7E16D3E76D005D2B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D706CD7F16D3E76D005D2B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D706CD8116D3E76D005D2B53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NavigationMenu/NavigationMenu-Prefix.pch";
+				INFOPLIST_FILE = "NavigationMenu/NavigationMenu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D706CD8216D3E76D005D2B53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NavigationMenu/NavigationMenu-Prefix.pch";
+				INFOPLIST_FILE = "NavigationMenu/NavigationMenu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D706CD5816D3E76D005D2B53 /* Build configuration list for PBXProject "NavigationMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D706CD7E16D3E76D005D2B53 /* Debug */,
+				D706CD7F16D3E76D005D2B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D706CD8016D3E76D005D2B53 /* Build configuration list for PBXNativeTarget "NavigationMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D706CD8116D3E76D005D2B53 /* Debug */,
+				D706CD8216D3E76D005D2B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D706CD5516D3E76D005D2B53 /* Project object */;
+}

@@ -1,4 +1,5 @@
-NavigationMenu
-==============
+Navigation Menu for iOS
+=============
+*Version 1.0*
 
-Objective-C component that adds menu to the navigation bar
+Navigation Menu is an Objective-C component that adds possibility to show menu from navigation bar.
