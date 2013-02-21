@@ -38,4 +38,13 @@
 
 //Menu color
 + (UIColor *)mainColor;
+
+//Item selection animation speed
++ (float)selectionSpeed;
+
+//Menu item text color
++ (UIColor *)itemTextColor;
+
+//Selection color
++ (UIColor *)selectionColor;
 @end

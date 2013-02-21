@@ -31,6 +31,7 @@
 		D75D641E16D62C7200B524FD /* arrow_down1.png in Resources */ = {isa = PBXBuildFile; fileRef = D75D641C16D62C7200B524FD /* arrow_down1.png */; };
 		D75D642016D6351200B524FD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D75D641F16D6351200B524FD /* README.md */; };
 		D75D642316D65EB100B524FD /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D75D642216D65EB100B524FD /* UIColor+Extension.m */; };
+		D75D642616D668AB00B524FD /* SICellSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = D75D642516D668AB00B524FD /* SICellSelection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,8 @@
 		D75D641F16D6351200B524FD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		D75D642116D65EB000B524FD /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
 		D75D642216D65EB100B524FD /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		D75D642416D668AB00B524FD /* SICellSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SICellSelection.h; sourceTree = "<group>"; };
+		D75D642516D668AB00B524FD /* SICellSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SICellSelection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 				D706CD8B16D3FB0C005D2B53 /* SIMenuTable.m */,
 				D706CD8D16D40097005D2B53 /* SIMenuCell.h */,
 				D706CD8E16D40097005D2B53 /* SIMenuCell.m */,
+				D75D642416D668AB00B524FD /* SICellSelection.h */,
+				D75D642516D668AB00B524FD /* SICellSelection.m */,
 				D706CD8716D3F214005D2B53 /* SIMenuButton.h */,
 				D706CD8816D3F214005D2B53 /* SIMenuButton.m */,
 			);
@@ -257,6 +262,7 @@
 				D706CD8F16D40097005D2B53 /* SIMenuCell.m in Sources */,
 				D721F09916D4F27B00397C1F /* SIMenuConfiguration.m in Sources */,
 				D75D642316D65EB100B524FD /* UIColor+Extension.m in Sources */,
+				D75D642616D668AB00B524FD /* SICellSelection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

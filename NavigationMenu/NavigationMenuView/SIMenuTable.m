@@ -11,6 +11,7 @@
 #import "SIMenuConfiguration.h"
 #import <QuartzCore/QuartzCore.h>
 #import "UIColor+Extension.h"
+#import "SICellSelection.h"
 
 @interface SIMenuTable () {
     CGRect endFrame;
@@ -76,7 +77,11 @@
             self.layer.backgroundColor = [UIColor color:[SIMenuConfiguration mainColor] withAlpha:0.0].CGColor;
             self.table.frame = startFrame;
         } completion:^(BOOL finished) {
-            [self.table deselectRowAtIndexPath:currentIndexPath animated:NO];
+//            [self.table deselectRowAtIndexPath:currentIndexPath animated:NO];
+            SIMenuCell *cell = (SIMenuCell *)[self.table cellForRowAtIndexPath:currentIndexPath];
+            [cell setSelected:NO withCompletionBlock:^{
+
+            }];
             currentIndexPath = nil;
             [self removeFooter];
             [self.table removeFromSuperview];
@@ -140,7 +145,6 @@
     SIMenuCell *cell = (SIMenuCell *)[tableView dequeueReusableCellWithIdentifier:@"Cell"];
     if (cell == nil) {
         cell = [[SIMenuCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        cell.selectionStyle = UITableViewCellSelectionStyleBlue;
     }
     
     cell.textLabel.text = [self.items objectAtIndex:indexPath.row];
@@ -153,11 +157,20 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     currentIndexPath = indexPath;
-    double delayInSeconds = 0.1;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+    
+    SIMenuCell *cell = (SIMenuCell *)[tableView cellForRowAtIndexPath:indexPath];
+    [cell setSelected:YES withCompletionBlock:^{
         [self.menuDelegate didSelectItemAtIndex:indexPath.row];
-    });
+    }];
+    
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SIMenuCell *cell = (SIMenuCell *)[tableView cellForRowAtIndexPath:indexPath];
+    [cell setSelected:NO withCompletionBlock:^{
+
+    }];
 }
 
 @end

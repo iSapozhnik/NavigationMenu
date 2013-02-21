@@ -9,6 +9,12 @@
 #import "SIMenuCell.h"
 #import "SIMenuConfiguration.h"
 #import "UIColor+Extension.h"
+#import "SICellSelection.h"
+#import <QuartzCore/QuartzCore.h>
+
+@interface SIMenuCell ()
+@property (nonatomic, strong) SICellSelection *cellSelection;
+@end
 
 @implementation SIMenuCell
 
@@ -17,8 +23,19 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         self.contentView.backgroundColor = [UIColor color:[SIMenuConfiguration itemsColor] withAlpha:[SIMenuConfiguration menuAlpha]];
-        self.textLabel.textColor = [UIColor whiteColor];
+        self.textLabel.textColor = [SIMenuConfiguration itemTextColor];
         self.textLabel.textAlignment = NSTextAlignmentCenter;
+        self.textLabel.shadowColor = [UIColor darkGrayColor];
+        self.textLabel.shadowOffset = CGSizeMake(0.0, -1.0);
+        
+        self.selectionStyle = UITableViewCellEditingStyleNone;
+        
+        self.cellSelection = [[SICellSelection alloc] initWithFrame:self.bounds andColor:[SIMenuConfiguration selectionColor]];
+        [self.cellSelection.layer setCornerRadius:6.0];
+        [self.cellSelection.layer setMasksToBounds:YES];
+        
+        self.cellSelection.alpha = 0.0;
+        [self.contentView insertSubview:self.cellSelection belowSubview:self.textLabel];
     }
     return self;
 }
@@ -45,8 +62,26 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
+}
 
-    // Configure the view for the selected state
+- (void)setSelected:(BOOL)selected withCompletionBlock:(void (^)())completion
+{
+    float alpha = 0.0;
+    if (selected) {
+        alpha = 1.0;
+    } else {
+        alpha = 0.0;
+    }
+    [UIView animateWithDuration:[SIMenuConfiguration selectionSpeed] animations:^{
+        self.cellSelection.alpha = alpha;
+    } completion:^(BOOL finished) {
+        completion();
+    }];
+}
+
+- (void)dealloc
+{
+    self.cellSelection = nil;
 }
 
 @end

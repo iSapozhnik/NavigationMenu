@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SIMenuCell : UITableViewCell
-
+- (void)setSelected:(BOOL)selected withCompletionBlock:(void (^)())completion;
 @end

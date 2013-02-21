@@ -3,7 +3,7 @@ Navigation Menu for iOS
 *Version 1.0*
 
 Navigation Menu is an Objective-C component that adds possibility to show menu from navigation bar.
-Inspired by Vkontakte app.
+Inspired by Vkontakte app. Minimum iOS target is 5.0
 
 Customization
 ---------
@@ -16,7 +16,9 @@ Customization
  - Distance between Title and arrow image *+ (float)arrowPadding;*
  - Items color in menu *+ (UIColor *)itemsColor;*
  - Menu color *+ (UIColor *)mainColor;*
- - Minimum iOS target is 5.0
+ - Item selection animation speed *+ (float)selectionSpeed;*
+ - Menu item text color *+ (UIColor *)itemTextColor;*
+ - Selection color (will create a gradiend with provided color at the top and 35% darker in the bottom) *+ (UIColor *)selectionColor;*
 
 Example
 ---------

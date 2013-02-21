@@ -37,7 +37,7 @@
 //Menu alpha value
 + (float)menuAlpha
 {
-    return 0.6;
+    return 0.8;
 }
 
 //Value of bounce
@@ -67,5 +67,20 @@
 + (UIColor *)mainColor
 {
     return [UIColor blackColor];
+}
+
++ (float)selectionSpeed
+{
+    return 0.15;
+}
+
++ (UIColor *)itemTextColor
+{
+    return [UIColor whiteColor];
+}
+
++ (UIColor *)selectionColor
+{
+    return [UIColor colorWithRed:45.0/255.0 green:105.0/255.0 blue:166.0/255.0 alpha:1.0];
 }
 @end
