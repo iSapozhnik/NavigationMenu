@@ -6,6 +6,14 @@ Navigation Menu is an Objective-C component that adds possibility to show menu f
 
 Examples
 ---------
+	//In your header (.h) file
+	#import "SINavigationMenuView.h"
+
+	@interface HAViewController : UIViewController <SINavigationMenuDelegate>
+
+	@end
+	
+	//In your implementation (.m) file
 	- (void)viewDidLoad
 	{
     	[super viewDidLoad];
@@ -28,4 +36,4 @@ Examples
     	NSLog(@"did selected item at index %d", index);
 	}
     
-See the demo project for more examples.
+You will need to add QuartzCore framework. This component use ARC.
