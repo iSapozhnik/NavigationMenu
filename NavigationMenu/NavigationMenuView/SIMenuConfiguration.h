@@ -9,12 +9,28 @@
 #import <Foundation/Foundation.h>
 
 @interface SIMenuConfiguration : NSObject
+//Menu width
 + (float)menuWidth;
+
+//Menu item height
 + (float)itemCellHeight;
+
+//Animation duration of menu appearence
 + (float)animationDuration;
+
+//Menu substrate alpha value
 + (float)backgroundAlpha;
+
+//Menu alpha value
 + (float)menuAlpha;
+
+//Value of bounce
 + (float)bounceOffset;
+
+//Arrow image near title
 + (UIImage *)arrowImage;
+
+//Distance between Title and arrow image
 + (float)arrowPadding;
+
 @end

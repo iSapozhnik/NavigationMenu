@@ -4,7 +4,7 @@ Navigation Menu for iOS
 
 Navigation Menu is an Objective-C component that adds possibility to show menu from navigation bar.
 
-Examples
+Example
 ---------
 	//In your header (.h) file
 	#import "SINavigationMenuView.h"
@@ -37,3 +37,4 @@ Examples
 	}
     
 You will need to add QuartzCore framework. This component use ARC.
+For cusomization see SIMenuConfiguration .h/.m files.

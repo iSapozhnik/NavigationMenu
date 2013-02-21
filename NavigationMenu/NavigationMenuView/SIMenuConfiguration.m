@@ -9,6 +9,7 @@
 #import "SIMenuConfiguration.h"
 
 @implementation SIMenuConfiguration
+//Menu width
 + (float)menuWidth
 {
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
