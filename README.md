@@ -7,10 +7,15 @@ Inspired by Vkontakte app.
 
 Customization
 ---------
- - Menu items color
-+ (UIColor *)itemsColor;
- - Menu item height
-+ (float)itemCellHeight;
+ - Menu item height + (float)itemCellHeight;
+ - Animation duration of menu appearence + (float)animationDuration;
+ - Menu substrate alpha value + (float)backgroundAlpha;
+ - Menu alpha value + (float)menuAlpha;
+ - Value of bounce + (float)bounceOffset;
+ - Arrow image near title + (UIImage *)arrowImage;
+ - Distance between Title and arrow image + (float)arrowPadding;
+ - Items color in menu + (UIColor *)itemsColor;
+ - Menu color + (UIColor *)mainColor;
  - Minimum iOS target is 5.0
 
 Example
