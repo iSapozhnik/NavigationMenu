@@ -8,6 +8,7 @@
 
 #import "SIMenuCell.h"
 #import "SIMenuConfiguration.h"
+#import "UIColor+Extension.h"
 
 @implementation SIMenuCell
 
@@ -15,8 +16,7 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        // Initialization code
-        self.contentView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:[SIMenuConfiguration menuAlpha]];
+        self.contentView.backgroundColor = [UIColor color:[SIMenuConfiguration itemsColor] withAlpha:[SIMenuConfiguration menuAlpha]];
         self.textLabel.textColor = [UIColor whiteColor];
         self.textLabel.textAlignment = NSTextAlignmentCenter;
     }

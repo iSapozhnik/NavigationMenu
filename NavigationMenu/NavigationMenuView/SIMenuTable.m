@@ -10,6 +10,7 @@
 #import "SIMenuCell.h"
 #import "SIMenuConfiguration.h"
 #import <QuartzCore/QuartzCore.h>
+#import "UIColor+Extension.h"
 
 @interface SIMenuTable () {
     CGRect endFrame;
@@ -28,8 +29,7 @@
     if (self) {
         self.items = [NSArray arrayWithArray:items];
         
-        self.layer.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0].CGColor;
-        
+        self.layer.backgroundColor = [UIColor color:[SIMenuConfiguration mainColor] withAlpha:0.0].CGColor;
         self.clipsToBounds = YES;
         
         endFrame = self.bounds;
@@ -43,8 +43,9 @@
         self.table.separatorStyle = UITableViewCellSeparatorStyleNone;
         
         UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - self.table.bounds.size.height, [SIMenuConfiguration menuWidth], self.table.bounds.size.height)];
-        header.backgroundColor = [UIColor colorWithWhite:0.0 alpha:[SIMenuConfiguration menuAlpha]];
+        header.backgroundColor = [UIColor color:[SIMenuConfiguration itemsColor] withAlpha:[SIMenuConfiguration menuAlpha]];
         [self.table addSubview:header];
+
     }
     return self;
 }
@@ -56,7 +57,7 @@
         [self addFooter];
     }
     [UIView animateWithDuration:[SIMenuConfiguration animationDuration] animations:^{
-        self.layer.backgroundColor = [UIColor colorWithWhite:0.0 alpha:[SIMenuConfiguration backgroundAlpha]].CGColor;
+        self.layer.backgroundColor = [UIColor color:[SIMenuConfiguration mainColor] withAlpha:[SIMenuConfiguration backgroundAlpha]].CGColor;
         self.table.frame = endFrame;
         self.table.contentOffset = CGPointMake(0, [SIMenuConfiguration bounceOffset]);
     } completion:^(BOOL finished) {
@@ -72,7 +73,7 @@
         self.table.contentOffset = CGPointMake(0, [SIMenuConfiguration bounceOffset]);
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:[SIMenuConfiguration animationDuration] animations:^{
-            self.layer.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0].CGColor;
+            self.layer.backgroundColor = [UIColor color:[SIMenuConfiguration mainColor] withAlpha:0.0].CGColor;
             self.table.frame = startFrame;
         } completion:^(BOOL finished) {
             [self.table deselectRowAtIndexPath:currentIndexPath animated:NO];

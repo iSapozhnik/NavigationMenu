@@ -33,4 +33,8 @@
 //Distance between Title and arrow image
 + (float)arrowPadding;
 
+//Items color in menu
++ (UIColor *)itemsColor;
+
++ (UIColor *)mainColor;
 @end

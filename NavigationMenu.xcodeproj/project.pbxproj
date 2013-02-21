@@ -30,6 +30,7 @@
 		D75D641D16D62C7200B524FD /* arrow_down1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D75D641B16D62C7200B524FD /* arrow_down1@2x.png */; };
 		D75D641E16D62C7200B524FD /* arrow_down1.png in Resources */ = {isa = PBXBuildFile; fileRef = D75D641C16D62C7200B524FD /* arrow_down1.png */; };
 		D75D642016D6351200B524FD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D75D641F16D6351200B524FD /* README.md */; };
+		D75D642316D65EB100B524FD /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D75D642216D65EB100B524FD /* UIColor+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,8 @@
 		D75D641B16D62C7200B524FD /* arrow_down1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_down1@2x.png"; sourceTree = "<group>"; };
 		D75D641C16D62C7200B524FD /* arrow_down1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_down1.png; sourceTree = "<group>"; };
 		D75D641F16D6351200B524FD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D75D642116D65EB000B524FD /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		D75D642216D65EB100B524FD /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				D721F09016D4E2D900397C1F /* images */,
+				D75D642116D65EB000B524FD /* UIColor+Extension.h */,
+				D75D642216D65EB100B524FD /* UIColor+Extension.m */,
 				D706CD8416D3E857005D2B53 /* SINavigationMenuView.h */,
 				D706CD8516D3E857005D2B53 /* SINavigationMenuView.m */,
 				D721F09716D4F27B00397C1F /* SIMenuConfiguration.h */,
@@ -251,6 +256,7 @@
 				D706CD8C16D3FB0C005D2B53 /* SIMenuTable.m in Sources */,
 				D706CD8F16D40097005D2B53 /* SIMenuCell.m in Sources */,
 				D721F09916D4F27B00397C1F /* SIMenuConfiguration.m in Sources */,
+				D75D642316D65EB100B524FD /* UIColor+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

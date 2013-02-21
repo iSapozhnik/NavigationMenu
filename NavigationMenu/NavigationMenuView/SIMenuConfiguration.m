@@ -25,7 +25,7 @@
 //Animation duration of menu appearence
 + (float)animationDuration
 {
-    return 0.35f;
+    return 0.3f;
 }
 
 //Menu substrate alpha value
@@ -56,5 +56,16 @@
 + (float)arrowPadding
 {
     return 13.0;
+}
+
+//Items color in menu
++ (UIColor *)itemsColor
+{
+    return [UIColor blackColor];
+}
+
++ (UIColor *)mainColor
+{
+    return [UIColor blackColor];
 }
 @end
