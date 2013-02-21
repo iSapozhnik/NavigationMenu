@@ -17,7 +17,7 @@
 
 @interface SINavigationMenuView : UIView <SIMenuDelegate>
 
-@property (nonatomic, assign) id <SINavigationMenuDelegate> delegate;
+@property (nonatomic, weak) id <SINavigationMenuDelegate> delegate;
 @property (nonatomic, strong) NSArray *items;
 
 - (id)initWithFrame:(CGRect)frame title:(NSString *)title;

@@ -15,7 +15,7 @@
 
 @interface SIMenuTable : UIView <UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, assign) id <SIMenuDelegate> menuDelegate;
+@property (nonatomic, weak) id <SIMenuDelegate> menuDelegate;
 
 - (id)initWithFrame:(CGRect)frame items:(NSArray *)items;
 - (void)show;

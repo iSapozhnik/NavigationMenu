@@ -10,11 +10,11 @@
 
 @interface SIMenuButton : UIControl
 
-@property (nonatomic, assign) BOOL isActive;
+@property (nonatomic, unsafe_unretained) BOOL isActive;
 @property (nonatomic) CGGradientRef spotlightGradientRef;
-@property (assign) float spotlightStartRadius;
-@property (assign) float spotlightEndRadius;
-@property (assign) CGPoint spotlightCenter;
+@property (unsafe_unretained) CGFloat spotlightStartRadius;
+@property (unsafe_unretained) float spotlightEndRadius;
+@property (unsafe_unretained) CGPoint spotlightCenter;
 @property (nonatomic, strong) UILabel *title;
 @property (nonatomic, strong) UIImageView *arrow;
 
