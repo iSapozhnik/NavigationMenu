@@ -17,7 +17,7 @@
         CGRect frame = CGRectMake(0.0, 0.0, 200.0, self.navigationController.navigationBar.bounds.size.height);
         SINavigationMenuView *menu = [[SINavigationMenuView alloc] initWithFrame:frame title:@"Menu"];
         [menu displayMenuInView:self.view];
-        menu.items = @[@"News", @"Top Articles", @"Messages"];
+        menu.items = @[@"News", @"Top Articles", @"Messages", @"Account", @"Settings", @"Top Articles", @"Messages"];
         menu.delegate = self;
         self.navigationItem.titleView = menu;
     }

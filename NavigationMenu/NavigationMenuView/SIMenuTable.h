@@ -13,7 +13,7 @@
 - (void)didSelectItemAtIndex:(NSUInteger)index;
 @end
 
-@interface SIMenuTable : UIControl <UITableViewDataSource, UITableViewDelegate>
+@interface SIMenuTable : UIView <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, assign) id <SIMenuDelegate> menuDelegate;
 
