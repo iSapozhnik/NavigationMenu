@@ -39,3 +39,8 @@ Example
     
 You will need to add QuartzCore framework. This component use ARC.
 For cusomization see SIMenuConfiguration .h/.m files.
+
+
+TODO:
+---------
+*add possibility to customize background color and menu items color*
