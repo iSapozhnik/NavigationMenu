@@ -5,6 +5,14 @@ Navigation Menu for iOS
 Navigation Menu is an Objective-C component that adds possibility to show menu from navigation bar.
 Inspired by Vkontakte app.
 
+Customization
+---------
+ - Menu items color
+    + (UIColor *)itemsColor;
+ - Menu item height
+    + (float)itemCellHeight;
+ - Minimum iOS target is 5.0
+
 Example
 ---------
 	//In your header (.h) file
@@ -39,8 +47,3 @@ Example
     
 You will need to add QuartzCore framework. This component use ARC.
 For cusomization see SIMenuConfiguration .h/.m files.
-
-
-TODO:
----------
-*add possibility to customize background color and menu items color*

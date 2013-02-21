@@ -36,5 +36,6 @@
 //Items color in menu
 + (UIColor *)itemsColor;
 
+//Menu color
 + (UIColor *)mainColor;
 @end
