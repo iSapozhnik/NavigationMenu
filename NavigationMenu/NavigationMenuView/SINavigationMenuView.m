@@ -58,8 +58,8 @@
 //        frame.origin.y += self.frame.size.height + [[UIApplication sharedApplication] statusBarFrame].size.height;
         self.table = [[SIMenuTable alloc] initWithFrame:self.menuContainer.frame items:self.items];
         self.table.menuDelegate = self;
-        [self.menuContainer addSubview:self.table];
     }
+    [self.menuContainer addSubview:self.table];
     [self rotateArrow:M_PI];
     [self.table show];
 }

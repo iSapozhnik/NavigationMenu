@@ -85,6 +85,7 @@
             currentIndexPath = nil;
             [self removeFooter];
             [self.table removeFromSuperview];
+            [self removeFromSuperview];
         }];
     }];
 }
