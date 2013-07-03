@@ -28,10 +28,12 @@
         self.title = [[UILabel alloc] initWithFrame:frame];
         self.title.textAlignment = NSTextAlignmentCenter;
         self.title.backgroundColor = [UIColor clearColor];
-        self.title.textColor = [UIColor whiteColor];
-        self.title.font = [UIFont boldSystemFontOfSize:20.0];
-        self.title.shadowColor = [UIColor darkGrayColor];
-        self.title.shadowOffset = CGSizeMake(0, -1);
+        NSDictionary *currentStyle = [[UINavigationBar appearance] titleTextAttributes];
+        self.title.textColor = currentStyle[UITextAttributeTextColor];
+        self.title.font = currentStyle[UITextAttributeFont];
+        self.title.shadowColor = currentStyle[UITextAttributeTextShadowColor];
+        NSValue *shadowOffset = currentStyle[UITextAttributeTextShadowOffset];
+        self.title.shadowOffset = shadowOffset.CGSizeValue;
         [self addSubview:self.title];
 
         self.arrow = [[UIImageView alloc] initWithImage:[SIMenuConfiguration arrowImage]];
