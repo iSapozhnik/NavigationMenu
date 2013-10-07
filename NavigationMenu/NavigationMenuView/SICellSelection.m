@@ -20,6 +20,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.baseColor = baseColor_;
+        self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     }
     return self;
 }
