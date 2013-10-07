@@ -42,9 +42,11 @@
         self.table.dataSource = self;
         self.table.backgroundColor = [UIColor clearColor];
         self.table.separatorStyle = UITableViewCellSeparatorStyleNone;
+        self.table.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         
         UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - self.table.bounds.size.height, [SIMenuConfiguration menuWidth], self.table.bounds.size.height)];
         header.backgroundColor = [UIColor color:[SIMenuConfiguration itemsColor] withAlpha:[SIMenuConfiguration menuAlpha]];
+        header.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         [self.table addSubview:header];
 
     }
@@ -147,6 +149,8 @@
     if (cell == nil) {
         cell = [[SIMenuCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
+    
+    cell.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     
     cell.textLabel.text = [self.items objectAtIndex:indexPath.row];
     
