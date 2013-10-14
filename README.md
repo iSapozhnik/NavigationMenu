@@ -5,6 +5,8 @@ Navigation Menu for iOS
 Navigation Menu is an Objective-C component that adds possibility to show menu from navigation bar.
 Inspired by Vkontakte app. Minimum iOS target is 5.0
 
+*TODO: add Pod*
+
 Customization
 ---------
  - Menu item height *+ (float)itemCellHeight;*
