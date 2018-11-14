@@ -1,4 +1,4 @@
-Navigation Menu for iOS
+[DEPRECATED] Navigation Menu for iOS
 =============
 *Version 1.0*
 
